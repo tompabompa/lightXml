@@ -138,10 +138,10 @@ public class NodeFactory {
         if (obj == null) {
             result = "";
         } else if (obj instanceof Clob) {
-            BufferedReader br = null;
+            BufferedReader br;
             try {
                 Clob cl = (Clob) obj;
-                StringBuffer strOut = new StringBuffer();
+                StringBuilder strOut = new StringBuilder();
                 String aux;
                 br = new BufferedReader(cl.getCharacterStream());
                 while ((aux = br.readLine()) != null) {
