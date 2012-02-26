@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : test-include-source.xml
+    Created on : den 9 mars 2011, 16:39
+    Author     : thomas
+    Description:
+        Purpose of the document follows.
+-->
+
+<include-root>
+    <extra-tag>included text</extra-tag>
+</include-root>

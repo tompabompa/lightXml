@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : test-source.xml
+    Created on : den 9 mars 2011, 15:55
+    Author     : thomas
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <tag1>text1</tag1>
+    <tag2 arg1="1">text2</tag2>
+</root>
