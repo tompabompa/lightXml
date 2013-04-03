@@ -24,6 +24,7 @@ public class DateUtilities {
     public DateUtilities(Date date) {
         Calendar c = new GregorianCalendar();
         c.setTime(date);
+        c.set(Calendar.AM_PM, Calendar.AM);
         c.set(Calendar.HOUR, 0);
         c.set(Calendar.MINUTE, 0);
         c.set(Calendar.SECOND, 0);
