@@ -1,8 +1,5 @@
 package se.digitman.util;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
  *
  * @author thomas
