@@ -291,16 +291,20 @@ public class DefaultXmlNode implements XmlNode {
      * @param text The text to add.
      */
     @Override
-    public void addText(String text) {
+    public final void addText(String text) {
         if (text != null && text.length() > 0) {
             if (isCdata()) {
-                cdata += collapseEntities(text);
+                cdata += collapseEntities(removeUnprintableCharacters(text));
             } else {
                 addChild(new DefaultXmlNode(text, true));
             }
         }
     }
 
+    private String removeUnprintableCharacters(String input) {
+        return input.replaceAll("\\p{C}", " ");
+    }
+    
     @Override
     public void setParent(XmlNode parent) {
         this.parent = parent;
